@@ -1,0 +1,158 @@
+/* 全局样式 */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 导航栏样式 */
+nav {
+    background-color: #1964af;
+    padding: 1rem 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #3498db;
+}
+
+/* 页眉样式 */
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    margin: 0.5rem 0 0;
+    font-size: 1.2rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    width: 80%;
+    /* 或者固定宽度，例如 300px */
+
+    /* 可选，限制最大宽度 */
+    margin: 0 auto;
+    /* 水平居中 */
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card a {
+    padding: 2%;
+    text-decoration: none;
+    color: black;
+}
+
+.card a:hover {
+    margin-top: 0;
+    color: #3498db;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+tr {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+td {
+    flex: 1;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+td:hover {
+    background-color: #f1f1f1;
+}
+
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+.et2 {
+    font-weight: bold;
+    color: #154c70;
+    height:"18";
+    text-align: "center";
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    tr {
+        flex-direction: column;
+    }
+
+    td {
+        margin-bottom: 10px;
+    }
+}
+
+table td {
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+}
+
+table th {
+    white-space: pre-wrap; 
+    word-wrap: break-word; 
+}
+
